@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
-import Logo from "./logo"
-import { Menu } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import Logo from "./logo";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
   return (
@@ -15,19 +15,34 @@ export default function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
             Home
           </Link>
-          <Link href="/marketplace" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/marketplace"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
             Marketplace
           </Link>
-          <Link href="/barter" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/barter"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
             Barter Board
           </Link>
-          <Link href="/sessions" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/sessions"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
             Live Sessions
           </Link>
-          <Link href="/wallet" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/wallet"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
             Skill Wallet
           </Link>
         </nav>
@@ -40,7 +55,7 @@ export default function Header() {
             </Link>
             <Link href="/register">
               <Button size="sm" className="purple-gradient text-white">
-                Get for free
+                Register
               </Button>
             </Link>
           </div>
@@ -54,19 +69,34 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link
+                  href="/"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
                   Home
                 </Link>
-                <Link href="/marketplace" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link
+                  href="/marketplace"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
                   Marketplace
                 </Link>
-                <Link href="/barter" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link
+                  href="/barter"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
                   Barter Board
                 </Link>
-                <Link href="/sessions" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link
+                  href="/sessions"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
                   Live Sessions
                 </Link>
-                <Link href="/wallet" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link
+                  href="/wallet"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
                   Skill Wallet
                 </Link>
                 <div className="flex flex-col gap-2 mt-4">
@@ -76,7 +106,9 @@ export default function Header() {
                     </Button>
                   </Link>
                   <Link href="/register">
-                    <Button className="w-full purple-gradient text-white">Get for free</Button>
+                    <Button className="w-full purple-gradient text-white">
+                      Get for free
+                    </Button>
                   </Link>
                 </div>
               </nav>
@@ -85,5 +117,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

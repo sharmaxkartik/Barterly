@@ -56,7 +56,7 @@ export function Hero() {
                 size="lg"
                 className="w-full sm:w-auto hover-scale enhanced-gradient text-white purple-glow"
               >
-                Get for free
+                Register
               </Button>
             </Link>
             <Link href="/marketplace">

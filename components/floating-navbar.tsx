@@ -80,29 +80,31 @@ export function FloatingNavbar({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
-              <div key={item.href} className="group relative">
-                <Link
-                  href={item.href}
-                  className={cn(
-                    "relative px-1 py-1 text-sm font-medium transition-colors hover:text-primary",
-                    pathname === item.href
-                      ? "text-primary" // Active link styling
-                      : ""
-                  )}
-                >
-                  {item.label}
-                  <span
+            {navItems
+              .filter((item) => item.label !== "Home") // Filter out the "Home" button
+              .map((item) => (
+                <div key={item.href} className="group relative">
+                  <Link
+                    href={item.href}
                     className={cn(
-                      "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full transform origin-left transition-transform duration-300 ease-out",
+                      "relative px-1 py-1 text-sm font-medium transition-colors hover:text-primary",
                       pathname === item.href
-                        ? "scale-x-100" // Keep underline for active link
-                        : "scale-x-0 group-hover:scale-x-100"
+                        ? "text-primary" // Active link styling
+                        : ""
                     )}
-                  />
-                </Link>
-              </div>
-            ))}
+                  >
+                    {item.label}
+                    <span
+                      className={cn(
+                        "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full transform origin-left transition-transform duration-300 ease-out",
+                        pathname === item.href
+                          ? "scale-x-100" // Keep underline for active link
+                          : "scale-x-0 group-hover:scale-x-100"
+                      )}
+                    />
+                  </Link>
+                </div>
+              ))}
           </nav>
 
           {/* Action Buttons */}
@@ -121,7 +123,7 @@ export function FloatingNavbar({
                 href="/register"
                 className="px-5 py-2 rounded-full enhanced-gradient text-primary-foreground text-sm font-medium hover:shadow-lg hover:shadow-purple-500/20"
               >
-                Get for free
+                Register
               </Link>
             </div>
 
@@ -138,7 +140,15 @@ export function FloatingNavbar({
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-purple-500/20">
+          <div
+            className={cn(
+              "md:hidden mt-4 pt-4 border-t border-purple-500/20",
+              "transition-all duration-300 ease-in-out transform",
+              mobileMenuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-4"
+            )}
+          >
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <div key={item.href}>
