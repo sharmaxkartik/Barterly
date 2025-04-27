@@ -16,7 +16,7 @@ import { DashboardPreview } from "@/components/dashboard-preview";
 const teamMembers = [
   {
     name: "Kartik Sharma",
-    role: "Frontend Developer",
+    role: "Developer Team",
     photo: "/kartik.jpg", // Updated path
     description: "Passionate about creating intuitive user interfaces.",
     linkedin: "https://linkedin.com/",
@@ -25,7 +25,7 @@ const teamMembers = [
   },
   {
     name: "Kuldeep Singh Bhadouriya",
-    role: "Backend Developer",
+    role: "Developer Team",
     photo: "/kuldeep.jpg", // Updated path
     description: "Specializes in building robust backend systems.",
     linkedin: "https://linkedin.com/",
@@ -34,7 +34,7 @@ const teamMembers = [
   },
   {
     name: "Priyanshi Singh Parihar",
-    role: "UI/UX Designer",
+    role: "Creative Team",
     photo: "/priyanshi.jpg",
     description: "Creates beautiful designs with a focus on user experience.",
     linkedin: "https://linkedin.com/",
@@ -43,7 +43,7 @@ const teamMembers = [
   },
   {
     name: "Satwik Somawanashi",
-    role: "Project Manager",
+    role: "Creatvie Team",
     photo: "/satwik.jpg",
     description: "Coordinates the team and ensures the project stays on track.",
     linkedin: "https://linkedin.com/",
@@ -70,7 +70,7 @@ export default function HomePage() {
                 Features
               </div>
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                How Skill Mint Works
+                How Barterly Works
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Our platform makes it easy to trade skills and knowledge with
@@ -287,7 +287,7 @@ export default function HomePage() {
                 About Our Team
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Meet the team behind Skill Mint, created for the hackathon
+                Meet the team behind Barterly, created for the hackathon
                 project.
               </p>
             </div>
