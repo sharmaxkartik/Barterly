@@ -34,8 +34,8 @@ export function Hero() {
             className="text-4xl md:text-6xl font-bold tracking-tighter animate-slide-up neon-glow"
             style={{ animationDelay: "0.2s" }}
           >
-            One Skill <br />
-            at a <span className="enhanced-text-gradient">Time</span>
+            Your Skill <br />
+            Your <span className="enhanced-text-gradient">Currency</span>
           </h1>
 
           <p

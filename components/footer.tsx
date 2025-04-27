@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container px-4 py-12 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="text-lg font-medium">Skill Mint</h3>
+            <h3 className="text-lg font-medium">Barterly</h3>
             <p className="text-sm text-muted-foreground">
               A platform for trading skills and knowledge with others in your community.
             </p>
@@ -75,7 +75,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Skill Mint. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Barterly. All rights reserved.</p>
         </div>
       </div>
     </footer>
