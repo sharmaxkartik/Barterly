@@ -2,6 +2,8 @@
 
 Barterly is a MERN stack web application that enables people to **trade skills instead of money**. Users can offer their expertise (like graphic design, coding, marketing) and request help in other areas in return. It’s a community-driven platform where **every hour you give earns you an hour to learn**.
 
+https://barterly-steel.vercel.app/
+
 ---
 
 ## 🚀 Features
