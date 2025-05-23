@@ -10,10 +10,9 @@ import { Stars } from "@/components/stars";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Skill Mint | Trade Skills, Grow Together",
+  title: "Barterly | Trade Skills, Grow Together",
   description:
     "A platform where users trade skills like hours of graphic design for hours of coding help",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
@@ -33,6 +32,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Add favicon */}
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${
           inter?.className || ""
