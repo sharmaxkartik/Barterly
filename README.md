@@ -1,6 +1,8 @@
-# 🌱 Skill Mint – A Skill Exchange Platform
+# Barterly – A Skill Exchange Platform (Prototype)
 
-Skill Mint is a MERN stack web application that enables people to **trade skills instead of money**. Users can offer their expertise (like graphic design, coding, marketing) and request help in other areas in return. It’s a community-driven platform where **every hour you give earns you an hour to learn**.
+Barterly is a MERN stack web application that enables people to **trade skills instead of money**. Users can offer their expertise (like graphic design, coding, marketing) and request help in other areas in return. It’s a community-driven platform where **every hour you give earns you an hour to learn**.
+
+https://barterly-steel.vercel.app/
 
 ---
 
@@ -14,15 +16,15 @@ Skill Mint is a MERN stack web application that enables people to **trade skills
 - 💬 In-app Messaging & Scheduling
 - ⭐ Rating & Review System
 - 📈 Leaderboard (Optional)
+- 🤖 Integrated with **Gemini API**
 
 ---
 
 ## 🔧 Tech Stack (MERN)
 
-- **MongoDB** – Stores users, skills, time credits, session data
-- **Express.js** – Backend APIs
+- **Next.js** – Frontend and Backend
 - **React.js** – Frontend UI
-- **Node.js** – Server logic
+- **Firebase** - Databse Management
 
 ---
 
@@ -37,26 +39,3 @@ Skill Mint is a MERN stack web application that enables people to **trade skills
 7. **Rate Each Other** – earn/spend time credits.
 8. **Repeat & Grow** – keep learning, teaching, and building community!
 
----
-
-## 🛠️ Setup Instructions
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/skill-mint.git
-cd skill-mint
-
-# 2. Install dependencies
-cd client && npm install      # For React frontend
-cd ../server && npm install   # For Node backend
-
-# 3. Setup environment variables
-# Create a .env file in /server with:
-# MONGO_URI=your_mongodb_connection_string
-# JWT_SECRET=your_jwt_secret
-
-# 4. Run the app
-cd ../server
-npm run dev                   # Starts backend
-cd ../client
-npm start                     # Starts frontend

@@ -43,7 +43,7 @@ const teamMembers = [
   },
   {
     name: "Satwik Somawanashi",
-    role: "Creative Team",
+    role: "Project Manager",
     photo: "/satwik.jpg",
     description: "Coordinates the team and ensures the project stays on track.",
     linkedin: "https://linkedin.com/",
@@ -70,7 +70,7 @@ export default function HomePage() {
                 Features
               </div>
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                How Skill Mint Works
+                How Barterly Works
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Our platform makes it easy to trade skills and knowledge with

@@ -672,6 +672,83 @@ export default function WalletPage() {
             </TabsContent>
           </Tabs>
         </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Reports</CardTitle>
+            <CardDescription>
+              Download your skill exchange reports
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <Card>
+                <CardHeader className="p-4">
+                  <CardTitle className="text-base">Monthly Summary</CardTitle>
+                </CardHeader>
+                <CardContent className="p-4 pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    Summary of all your skill exchanges for the current month.
+                  </p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0">
+                  <Button variant="outline" className="w-full">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader className="p-4">
+                  <CardTitle className="text-base">Skill Breakdown</CardTitle>
+                </CardHeader>
+                <CardContent className="p-4 pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    Detailed breakdown of hours by skill category.
+                  </p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0">
+                  <Button variant="outline" className="w-full">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader className="p-4">
+                  <CardTitle className="text-base">User Exchanges</CardTitle>
+                </CardHeader>
+                <CardContent className="p-4 pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    Report showing exchanges with specific users.
+                  </p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0">
+                  <Button variant="outline" className="w-full">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader className="p-4">
+                  <CardTitle className="text-base">Tax Summary</CardTitle>
+                </CardHeader>
+                <CardContent className="p-4 pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    Summary of skill exchanges for tax purposes.
+                  </p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0">
+                  <Button variant="outline" className="w-full">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
