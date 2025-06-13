@@ -1,0 +1,9 @@
+All Rights Reserved
+
+Copyright (c) 2025 Kartik Sharma and Kuldeep Bhadauriya
+
+This project and source code are copyrighted and may not be
+reproduced, distributed, transmitted, displayed, published,
+or broadcast without the prior written permission of the authors.
+
+Unauthorized use is strictly prohibited.
